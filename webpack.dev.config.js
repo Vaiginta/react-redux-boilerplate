@@ -14,7 +14,9 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loaders: ['react-hot', 'babel']
-      }]
+      },
+      { test: /\.scss$/, loader: 'style!css!sass'},
+      { test: /\.css$/, loader: 'style!css' }]
     },
     devServer : { hot: true },
     devtool   : 'cheap-module-eval-source-map',

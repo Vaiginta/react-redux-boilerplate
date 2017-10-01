@@ -4,6 +4,7 @@ import { Provider }                    from 'react-redux';
 import AppContainer from './containers/app.js';
 import instantiateStore from './instantiate_store.js';
 const { store } = instantiateStore();
+import '../css/index.scss';
 
 class Base extends Component {
   render () {
